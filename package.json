@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/xypnox/JSsick/issues"
   },
-  "homepage": "https://github.com/xypnox/JSsick#readme"
+  "homepage": "https://github.com/xypnox/JSsick#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-html": "^4.0.3"
+  }
 }
