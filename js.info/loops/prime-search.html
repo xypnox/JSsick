@@ -1,0 +1,15 @@
+<script type="text/javascript">
+    let n = 10;
+
+    for (let i = 2; i <= n; i++) {
+        let cond = 0;
+        for (let j = 2; j < i; j++) {
+            if (i % j == 0) {
+                cond = 1; break;
+            }
+        }
+        if (cond == 0) {
+            alert("The number " + i + " is a prime.");
+        }
+    }
+</script>
