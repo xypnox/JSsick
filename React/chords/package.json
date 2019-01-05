@@ -6,7 +6,9 @@
     "chordsheetjs": "^2.8.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5",
+    "react-scripts": "1.1.5"
+  },
+  "devDependencies": {
     "webpack-dev-server": ">=3.1.11"
   },
   "scripts": {
