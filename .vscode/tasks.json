@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Show in console",
+      "type": "shell",
+      "command": "/snap/bin/node ${file}",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "clear": true,
+        "echo": false,
+        "showReuseMessage": false,
+      }
+    }
+  ]
+}
