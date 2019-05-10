@@ -10,7 +10,14 @@ function Ninja({ ninjas, deleteNinja }) {
           <h1>Name: {ninja.name}</h1>
           <p>Age: {ninja.age} </p>
           <p>Belt: {ninja.belt}</p>
-          <button type="button" onClick={ () => {deleteNinja(ninja.id)} }>Delete</button>
+          <button
+            type="button"
+            onClick={() => {
+              deleteNinja(ninja.id);
+            }}
+          >
+            Delete
+          </button>
         </div>
       );
     }
