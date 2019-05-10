@@ -25,6 +25,7 @@
         }
       ]
     },
+    "parser": "babel-eslint",
     "plugins": [
       "prettier"
     ]

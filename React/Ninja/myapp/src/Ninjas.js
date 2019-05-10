@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Ninja({ ninjas }) {
+// Functional Component for displaying a ninja
+function Ninja({ ninjas, deleteNinja }) {
   const ninjaList = ninjas.map(ninja => {
     if (ninja.age > 20) {
       return (
@@ -8,6 +9,7 @@ function Ninja({ ninjas }) {
           <h1>Name: {ninja.name}</h1>
           <p>Age: {ninja.age} </p>
           <p>Belt: {ninja.belt}</p>
+          <button type="button" onClick={ () => {deleteNinja(ninja.id)} }>Delete</button>
         </div>
       );
     }
