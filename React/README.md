@@ -15,7 +15,7 @@ Most React projects would be setup in a similar fashion. I use VSCode on Linux f
 Creating a new react project is an easy step using create-react-app:
 
 ```
-$ npx create-react-app <project-name> 
+$ npx create-react-app <project-name>
 ```
 
 This creates a project setup with files in a new folder named after the `project-name`. Note that this setup uses yarn as the default package manager.
@@ -36,7 +36,7 @@ yarn add eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-pl
 
 Libraries installed in this command:
 
-- eslint 
+- eslint
 - babel-eslint
 - eslint-config-airbnb
 - eslint-plugin-import
@@ -59,6 +59,10 @@ This file should be located at the root directory of your react  project and is 
     "prettier",
     "prettier/react"
   ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "rules": {
     "react/jsx-filename-extension": [
       1,
@@ -94,8 +98,8 @@ These are the settings for VSCode. They can be edited by going to settings (`Ctr
 ```json
 {
   // ... Other Settings ...
-  
-  
+
+
   // ESLint
   // formatting using eslint
   // let editor format using prettier for all other files
@@ -142,4 +146,4 @@ $ yarn add react-router-dom
 
 # Reference
 
-<https://medium.com/appstud/setup-eslint-and-prettier-together-for-react-and-react-native-projects-in-visual-studio-code-78772d58358d> 
+<https://medium.com/appstud/setup-eslint-and-prettier-together-for-react-and-react-native-projects-in-visual-studio-code-78772d58358d>
