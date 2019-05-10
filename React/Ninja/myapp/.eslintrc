@@ -15,6 +15,7 @@
         }
       ],
       "no-console": 0,
+      "react/no-unused-state": 1,
       "prettier/prettier": [
         "warn",
         {
