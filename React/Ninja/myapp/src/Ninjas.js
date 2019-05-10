@@ -1,4 +1,5 @@
 import React from 'react';
+import './Ninjas.css';
 
 // Functional Component for displaying a ninja
 function Ninja({ ninjas, deleteNinja }) {
