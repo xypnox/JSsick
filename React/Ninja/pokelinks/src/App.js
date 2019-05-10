@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
+import Post from './components/Post';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         {/* exact keyword prevents home from matching with starting / of contacts and about */}
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
+        <Route path="/:post_id" component={Post} />
       </div>
     </BrowserRouter>
   );
