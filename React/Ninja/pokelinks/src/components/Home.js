@@ -1,6 +1,9 @@
 import React from 'react';
+import Rainbow from '../hoc/Rainbow';
 
-function Home() {
+function Home(props) {
+  console.log(props);
+
   return (
     <div className="Home">
       <h1>Home</h1>
@@ -13,4 +16,6 @@ function Home() {
   );
 }
 
-export default Home;
+// Note that we have wrapped our compoent in a custom Higher order component
+// See src/hoc/Rainbow for implementation detail
+export default Rainbow(Home);

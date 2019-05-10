@@ -14,6 +14,7 @@ function App() {
         </header>
         <Navbar />
         <Route exact path="/" component={Home} />
+        {/* exact keyword prevents home from matching with starting / of contacts and about */}
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
       </div>
