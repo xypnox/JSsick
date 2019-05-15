@@ -9,7 +9,7 @@ for (let j = 1; j < A.length; j++) {
 
   while (i >= 0 && A[i] > key) {
     // note that changing A[i] > key is the
-    // simplest way to reverse soret the Array
+    // simplest way to reverse sort the Array
     A[i + 1] = A[i];
     i = i - 1;
   }
