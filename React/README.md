@@ -4,8 +4,6 @@ This folder contains my tests and experiments with react a frontend UI framework
 
 This README contains some notes on React.
 
-
-
 # Project Setup
 
 Most React projects would be setup in a similar fashion. I use VSCode on Linux for editing code and hence my setup would reflect the same.
@@ -31,34 +29,25 @@ Install ESLint plugin for VSCode: <https://marketplace.visualstudio.com/items?it
 This must be run on a per project basis. Although you can install it globally as well.
 
 ```
-yarn add eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react  prettier eslint-config-prettier eslint-plugin-prettier -D
+yarn add eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react -D
 ```
 
 Libraries installed in this command:
 
 - eslint
-- babel-eslint
-- eslint-config-airbnb
 - eslint-plugin-import
 - eslint-plugin-jsx-a11y
 - eslint-plugin-react
-- prettier
-- eslint-config-prettier
-- eslint-plugin-prettier
 
 ### Configuration files
 
 #### .eslintrc
 
-This file should be located at the root directory of your react  project and is used as settings for eslint. These settings work well for  me. Modify them as you please.
+This file should be located at the root directory of your react project and is used as settings for eslint. These settings work well for me. Modify them as you please.
 
 ```json
 {
-  "extends": [
-    "airbnb",
-    "prettier",
-    "prettier/react"
-  ],
+  "extends": ["react-app"],
   "env": {
     "browser": true,
     "node": true
@@ -67,50 +56,33 @@ This file should be located at the root directory of your react  project and is 
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "no-console": 0,
-    "react/no-unused-state": 1,
-    "prettier/prettier": [
-      "warn",
-      {
-        "trailingComma": "es5",
-        "singleQuote": true,
-        "printWidth": 100
-      }
-    ]
-  },
-  "parser": "babel-eslint",
-  "plugins": [
-    "prettier"
-  ]
+    "react/no-unused-state": 1
+  }
 }
 ```
 
 #### VSCode / settings.json
 
-These are the settings for VSCode. They can be edited by going to settings (`Ctrl + ` `) then clicking the `{}` icon.
+These are the settings for VSCode. They can be edited by going to settings (`Ctrl +` `) then clicking the`{}` icon.
 
 ```json
 {
   // ... Other Settings ...
 
-
   // ESLint
   // formatting using eslint
   // let editor format using prettier for all other files
   "editor.formatOnSave": true,
-  // disable editor formatting, so eslint can handle it
-  "[javascript]": {
-      "editor.formatOnSave": false,
-  },
   // available through eslint plugin in vscode
   "eslint.autoFixOnSave": true,
   "eslint.alwaysShowStatus": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true
 }
 ```
 
@@ -126,8 +98,6 @@ It is used for REST API Requests. It is based on ES6 promises.
 $ yarn add axios
 ```
 
-
-
 ## React Router
 
 It is used to route links through react. It is helpful in Single Page Applications (SPAs).
@@ -137,6 +107,14 @@ It is used to route links through react. It is helpful in Single Page Applicatio
 ```
 $ yarn add react-router-dom
 ```
+
+## Node Sass
+
+Adds support for sass file imports and auto-compiling.
+
+## react-html5-camera-photo
+
+https://www.npmjs.com/package/react-html5-camera-photo
 
 # Other Useful Stuff
 
