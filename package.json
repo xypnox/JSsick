@@ -24,7 +24,7 @@
     "eslint": "^4.19.1",
     "eslint-plugin-html": "^4.0.3",
     "eslint-plugin-react": "^7.14.1",
-    "merge": ">=1.2.1"
+    "merge": ">=2.1.1"
   },
   "dependencies": {
     "big-integer": "^1.6.44"
